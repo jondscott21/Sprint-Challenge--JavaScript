@@ -75,7 +75,7 @@ const graduates = [{"id":1,"first_name":"Cynde","university":"Missouri Southern 
 Once you have the new array created, sort the universities alphabetically and log the result. */
 const universities = [];
 graduates.map(el => universities.push(el.university));
-universities.sort(function(a, b) {
+universities.sort((a, b) => {
   return a.localeCompare(b);
 });
 console.log(universities)
@@ -94,7 +94,7 @@ console.log(contactInfo);
 /* Request 3: Find out how many universities have the string "Uni" included in their name. 
 Create a new array called uni that contains them all. Log the result. */
 const uni = [];
-graduates.filter(function(el) {
+graduates.filter(el => {
   if(el.university.includes("Uni")) {
     uni.push(el)
   }
