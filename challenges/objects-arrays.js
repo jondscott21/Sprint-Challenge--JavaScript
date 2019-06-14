@@ -149,7 +149,7 @@ The zoos are concenred about animals with a lower population count. Find out whi
 
 */
 const lowerPopulation = [];
-zooAnimals.filter(function(el) {
+zooAnimals.filter(el => {
   if(el.population < 5) {
     lowerPopulation.push(el)
   }
